@@ -56,6 +56,20 @@ public class PlayerController : MonoBehaviour
         if (count >= winNum)
         {
             winTextObject.enabled = true;
+            Destroy(GameObject.FindGameObjectWithTag("Enemy"));
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Collision w/ " + collision.gameObject.tag);
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose";
+            winTextObject.enabled = true;
+            gameObject.SetActive(false); 
+
+        }
+    }
+
 }
