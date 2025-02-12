@@ -8,14 +8,15 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField]
     private LayerMask mask;
     private PlayerUI playerUI;
-
-    public Player_Input inputManager;
+    private Player_Input playerInput;
+    private Player_Input.OnFootActions onFoot;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         cam = GetComponent<PlayerLook>().cam;
         playerUI = GetComponent<PlayerUI>();
-        inputManager = GetComponent<Player_Input>();
+        playerInput = new Player_Input();
+        onFoot = playerInput.OnFoot;
     }
 
     // Update is called once per frame
@@ -31,8 +32,9 @@ public class PlayerInteract : MonoBehaviour
             {
                 Interactable interactable = hitInfo.collider.GetComponent<Interactable>();
                playerUI.UpdateText(interactable.promptMessage);
-               if (inputManager.OnFoot.Interact.triggered)
+               if (onFoot.Interact.triggered)
                {
+                    Debug.Log("Input Recieved");
                     interactable.baseInteract();
                }
             }

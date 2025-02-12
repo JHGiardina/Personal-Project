@@ -11,6 +11,6 @@ public abstract class Interactable : MonoBehaviour
     }
     protected virtual void Interact()
     {
-
+        Debug.Log("Interacting with" + gameObject.name);
     }
 }
