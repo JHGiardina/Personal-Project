@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PickUp
   - Enemy
+  - Grass
+  - Water
+  - Cave
   layers:
   - Default
   - TransparentFX
@@ -14,9 +17,9 @@ TagManager:
   - Water
   - UI
   - Interactable
-  - Grass
-  - Water
-  - Cave
+  - 
+  - 
+  - 
   - 
   - 
   - 
