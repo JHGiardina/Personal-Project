@@ -12,9 +12,13 @@ GameObject:
   - component: {fileID: 441160789529850729}
   - component: {fileID: 1732742440057568052}
   - component: {fileID: 7401416849372934252}
+  - component: {fileID: 452157811606574814}
   - component: {fileID: 94094010903892605}
   - component: {fileID: 9216122535508739941}
   - component: {fileID: 7403256310830985235}
+  - component: {fileID: 2760459529291620939}
+  - component: {fileID: 5309411439281173215}
+  - component: {fileID: 780462524030594860}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -116,6 +120,22 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &452157811606574814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437625405480500770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1b499d5e0b64e14a6d8b1b398198d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 3.15
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &94094010903892605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +178,47 @@ MonoBehaviour:
   cam: {fileID: 2400905795444772078}
   xSensitivity: 30
   ySensitivity: 30
+--- !u!114 &2760459529291620939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437625405480500770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1bd0a13144942b99284810fb646a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptText: {fileID: 0}
+--- !u!114 &5309411439281173215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437625405480500770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a327a7201fd4bfd880b0d1cbb98442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  chipSpeed: 2
+  frontHealthbar: {fileID: 0}
+  backHealthbar: {fileID: 0}
+--- !u!114 &780462524030594860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437625405480500770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b3ddb4b8405419d91dfe21985edeba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4195697525213709955
 GameObject:
   m_ObjectHideFlags: 0
