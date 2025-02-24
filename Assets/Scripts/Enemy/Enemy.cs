@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     public string currentState;
     public EnemyPath path;
+    public GameObject target;
+    public GameObject Target { get => target;}
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

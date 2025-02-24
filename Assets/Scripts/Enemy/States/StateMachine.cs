@@ -4,11 +4,13 @@ public class StateMachine : MonoBehaviour
 {
     public BaseState activeState;
     public PatrolState patrolState;
+    public AttackState attackState;
 
     public void Initialise()
     {
         patrolState = new PatrolState();
-        ChangeState(patrolState);
+        attackState = new AttackState();
+        ChangeState(attackState);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
